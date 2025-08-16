@@ -34,7 +34,7 @@ jobs:
 
       - name: Download task definition
         run: |
-          aws ecs describe-task-definition --task-definition familia-servico1 --query taskDefinition > task-definition.json
+          aws ecs describe-task-definition --task-definition familia-servico1:1 --query taskDefinition > task-definition.json
             echo test, and deploy your project.
   
       - name: Login to Amazon ECR
